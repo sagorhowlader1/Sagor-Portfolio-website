@@ -3,20 +3,14 @@
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { FaCss3Alt, FaGitAlt, FaServer } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
+
 import {
   SiHtml5,
-  SiCss3,
   SiJavascript,
   SiTypescript,
   SiReact,
-  SiNextdotjs,
-  SiC,
-  SiCplusplus,
-  SiPython,
   SiTailwindcss,
-  SiBootstrap,
   SiFigma,
-  SiSass,
   SiNodedotjs,
   SiExpress,
   SiShadcnui,
@@ -24,8 +18,6 @@ import {
   SiVercel,
   SiNetlify,
   SiGithub,
-  SiNginx,
-  SiDocker,
   SiHeroui,
   SiDaisyui,
   SiClaude,
@@ -105,7 +97,7 @@ const categories = [
 
 const Skills = () => {
   return (
-    <section className="min-h-screen bg-black px-5 py-32 sm:px-8">
+    <section id="skills" className="min-h-screen bg-black px-5 py-32 sm:px-8">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-center mb-16 justify-center text-white">
         MY SKILLS
       </h2>

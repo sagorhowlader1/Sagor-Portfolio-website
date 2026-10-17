@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiExpress, SiJavascript, SiMongodb } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 
 const Hero = () => {
@@ -40,19 +40,9 @@ const Hero = () => {
       });
     }
   };
-
+  // bg-[#0F3040]
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden bg-[#0F3040] text-white">
-      {/* ================= Background Glow ================= */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-15%] top-[20%] h-[500px] w-[500px] rounded-full bg-purple-700/15 blur-[140px]" />
-        <div className="absolute right-[-10%] top-[10%] h-[550px] w-[550px] rounded-full bg-violet-600/15 blur-[150px]" />
-        <div className="absolute bottom-[-20%] left-[35%] h-[450px] w-[450px] rounded-full bg-fuchsia-600/10 blur-[150px]" />
-
-        {/* Subtle Grid */}
-
-      </div>
-
+    <section id="home" className="relative min-h-screen overflow-hidden bg-black/60 text-white">
       {/* ================= Main Container ================= */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-16 pt-28 sm:px-8 lg:px-12">
         <div className="grid w-full items-center gap-14 lg:grid-cols-2">
@@ -227,8 +217,8 @@ const Hero = () => {
                   className="float-slow absolute -bottom-4 right-14 flex h-14 w-14 items-center justify-center rounded-2xl border border-green-400/20 bg-[#110c1b]/90 shadow-xl shadow-green-900/10 backdrop-blur-md"
                   title="Node.js"
                 >
-                 
-                  <FaNodeJs size={30}  className="text-green-400"/>
+
+                  <FaNodeJs size={30} className="text-green-400" />
                 </div>
               </div>
             </div>

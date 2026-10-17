@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen overflow-hidden bg-[#0F3040] py-24 select-none font-poppins text-white"
+      className="relative min-h-screen overflow-hidden bg-black/80 py-24 select-none font-poppins text-white"
     >
 
       <div className="container-safe relative z-10 mx-auto max-w-6xl px-5 sm:px-8">
@@ -32,7 +32,6 @@ const About = () => {
           </p>
         </div>
 
-
         <div className="flex flex-col mb-20">
           <div className="grid grid-cols-3 gap-6">
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"><HiOutlineLightBulb size={25} /> Problem Solver</h3>
@@ -43,7 +42,6 @@ const About = () => {
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"><HiOutlineLightBulb size={25} />Curlous Mind</h3>
           </div>
         </div>
-
 
         {/* Right Content */}
         <div className="flex flex-col items-start md:items-center gap-3">

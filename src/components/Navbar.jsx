@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { TbFileCvFilled } from "react-icons/tb";
 import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";

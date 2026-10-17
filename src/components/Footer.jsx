@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Mail } from "lucide-react";
 import { SiLeetcode } from "react-icons/si";
 export const Contact = () => {
-  return <footer id="contact" className="relative scroll-mt-20 bg-[#0A0518] text-white px-6 md:px-10 lg:px-16 py-10 font-['Poppins'] overflow-hidden">
+  return <footer id="contact" className="relative  scroll-mt-20 bg-[#0A0518] text-white px-6 md:px-10 lg:px-16 py-10 font-['Poppins'] overflow-hidden">
     {/* Background Glow */}
     <div className="pointer-events-none absolute -top-20 -left-20 h-64 w-64 rounded-full bg-purple-600/15 blur-[100px]" />
 

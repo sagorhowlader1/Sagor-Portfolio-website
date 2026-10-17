@@ -9,7 +9,7 @@ import "../styles/globals.css";
 
 export default function Home() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <Navbar />
 
       <main>

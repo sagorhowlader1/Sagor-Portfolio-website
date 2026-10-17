@@ -1,121 +1,126 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { Sparkles } from "lucide-react";
-import { projectsData } from "../data/projects";
-import ProjectCard from "./ProjectCard";
-import ProjectDetailsModal from "./ProjectDetailsModal";
 
-export const Projects = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    const section = document.getElementById("projects");
-    if (!section) return;
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setIsVisible(true);
-      },
-      { threshold: 0.08 }
-    );
+const projects = [
+  {
+    title: "DevStack",
+    description:
+      "DevStack is a modern platform for developers to explore technology, discover useful resources and enhance their development skills.",
+    image: "/images/dev-stack.png",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/sagorhowlader1/technologystack",
+    live: "https://technology-stack1.netlify.app/",
+  },
+  {
+    title: "Bazar Dor",
+    description:
+      "Bazar Dor is a user-friendly platform to explore daily market prices, compare product costs, and make smarter shopping decisions.",
+    image: "/images/bazar-dor.png",
+    technologies: ["Next.js", "React", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/sagorhowlader1/bazar-dor",
+    live: "https://bazar-dor-lilac.vercel.app/",
+  },
+  {
+    title: "Fitlog Workout Library",
+    description:
+      "FitLog is a modern workout library that helps users explore exercises, track their fitness plans, and stay consistent with their fitness goals.",
+    image: "/images/filog-workout-library.png",
+    technologies: ["Next.js", "React", "Tailwind CSS"],
+    github: "https://github.com/sagorhowlader1/fitlog-workout-library",
+    live: "https://fitlog-workout-library-livid.vercel.app/",
+  },
+];
 
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
-  const handleOpenModal = (project) => {
-    setSelectedProject(project);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
+const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#05020D] py-24 min-h-screen flex items-center justify-center font-preahvihear select-none"
+      className="bg-[#030407] px-5 py-20 text-white"
     >
-      {/* Background Glow */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-10%] top-[30%] h-[500px] w-[500px] rounded-full bg-purple-600/10 blur-[150px]" />
-        <div className="absolute right-[-10%] bottom-[20%] h-[500px] w-[500px] rounded-full bg-fuchsia-600/10 blur-[150px]" />
-      </div>
-
-      <div className="container-safe relative z-10 w-full max-w-5xl px-4 mx-auto">
-        {/* Section Header */}
-        <div
-          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ease-out ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
-        >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-950/40 text-xs tracking-[0.25em] uppercase text-purple-300 mb-4 backdrop-blur-md">
-            <Sparkles size={14} className="text-purple-400" />
-            <span>Featured Portfolio</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
-            Recent{" "}
-            <span className="bg-gradient-to-r from-purple-300 via-fuchsia-400 to-violet-500 bg-clip-text text-transparent">
-              Projects
-            </span>
+      <div className="mx-auto max-w-6xl">
+        {/* Section heading */}
+        <div className="mb-8 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-center mb-6 justify-center text-white">
+            MY PROJECTS
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-gray-400 leading-relaxed max-w-xl mx-auto">
-            A showcase of full-stack and frontend applications built with Next.js, React, TypeScript, and modern styling.
+          <p className=" text-sm text-gray-400">
+            Explore a selection of my projects, showcasing my skills in web development.
           </p>
+
+          {/* <div className="mx-auto mt-3 h-0.5 w-12 bg-[#a3ff00]" /> */}
         </div>
 
-        {/* Projects Alternating Stack */}
-        <div
-          className={`space-y-20 transition-all duration-1000 ease-out ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
-        >
-          {projectsData.map((project, index) => (
-            <ProjectCard
-              key={project.id || index}
-              project={project}
-              index={index}
-              onViewDetails={handleOpenModal}
-            />
+        {/* Project cards */}
+        <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <article
+              key={project.title}
+              className="group overflow-hidden rounded-xl border border-zinc-800 bg-[#08090c] transition duration-300 hover:-translate-y-1 hover:border-[#a3ff00]/50"
+            >
+              {/* Project image */}
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={`${project.title} screenshot`}
+                  className="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Project details */}
+              <div className="p-5">
+                <h3 className="text-xl font-semibold">
+                  {project.title}
+                </h3>
+
+                <p className="mt-2 min-h-12 text-sm leading-6 text-gray-400">
+                  {project.description}
+                </p>
+
+                {/* Technology badges */}
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-md border border-[#a3ff00]/20 bg-[#a3ff00]/5 px-2 py-1 text-xs text-[#a3ff00]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="mt-5 flex items-center gap-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`GitHub repository for ${project.title}`}
+                    className="text-gray-300 transition hover:text-[#a3ff00]"
+                  >
+                    <FaGithub size={20} />
+                  </a>
+
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Live demo of ${project.title}`}
+                    className="flex items-center gap-1 text-sm text-[#a3ff00] hover:underline"
+                  >
+                    Live Demo
+                    <FiExternalLink />
+                  </a>
+                </div>
+              </div>
+            </article>
           ))}
         </div>
-
-        {/* Bottom CTA to GitHub */}
-        <div
-          className={`max-w-xl mx-auto text-center mt-28 pt-10 border-t border-purple-900/30 transition-all duration-700 ease-out delay-300 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          <h3 className="text-xl font-normal text-white mb-2">
-            Want to explore more source code & repositories?
-          </h3>
-          <p className="text-sm text-gray-400 mb-6">
-            Check out my GitHub profile for open-source contributions, repositories, and experiments.
-          </p>
-
-          <a
-            href="https://github.com/FuadAlMaimun-1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-7 py-3 rounded-full bg-purple-600/20 hover:bg-purple-600/40 border border-purple-500/40 text-purple-200 text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-950/40"
-          >
-            Visit My GitHub Profile
-          </a>
-        </div>
       </div>
-
-      {/* Project Details Modal */}
-      <ProjectDetailsModal
-        project={selectedProject}
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-      />
     </section>
   );
 };
