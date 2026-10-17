@@ -230,14 +230,6 @@ const Hero = () => {
                  
                   <FaNodeJs size={30}  className="text-green-400"/>
                 </div>
-
-                {/* Node.js */}
-                {/* <div
-                  className="float-slow absolute -bottom-4 right-14 flex h-14 w-14 items-center justify-center rounded-2xl border border-green-400/20 bg-[#110c1b]/90 shadow-xl shadow-green-900/10 backdrop-blur-md"
-                  title="Node.js"
-                >
-                  <SiExpress size={30} className="text-white" />
-                </div> */}
               </div>
             </div>
           </div>

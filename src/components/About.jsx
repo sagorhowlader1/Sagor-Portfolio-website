@@ -1,19 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import {
-  Code2,
-  Compass,
-  Briefcase,
-  Heart,
-  Sparkles,
-  MapPin,
-  Languages,
-  CheckCircle2,
-  Terminal,
-  Zap,
-  Users,
-  Cpu,
   Mail,
 } from "lucide-react";
 import { FaBookOpen, FaCode, FaFacebook, FaLinkedin, FaUsers, FaWhatsapp } from "react-icons/fa";
@@ -22,31 +9,6 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { PiTargetBold } from "react-icons/pi";
 
 const About = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const section = document.getElementById("about");
-    if (!section) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.15 }
-    );
-
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
-  const strengths = [
-    { title: "Fast Learner", desc: "Quickly adopt modern libraries, frameworks, and workflows" },
-    { title: "Clean Code", desc: "Focus on readability, maintainable architectures, and reusability" },
-    { title: "Team Player", desc: "Open communication, agile collaboration, and git-based workflows" },
-    { title: "Problem Solver", desc: "Patient debugger with analytical approach to challenges" },
-  ];
 
   return (
     <section
@@ -57,16 +19,11 @@ const About = () => {
       <div className="container-safe relative z-10 mx-auto max-w-6xl px-5 sm:px-8">
         {/* ================= Section Header ================= */}
         <div
-          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-            }`}
+          className="text-center  max-w-3xl mx-auto mb-16 transition-all duration-700 ease-out opacity-100 translate-y-0 opacity-0 translate-y-6"
         >
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-10 text-white">
             About Me
-            {/* About{" "}
-            <span className="bg-gradient-to-r from-purple-300 via-fuchsia-400 to-violet-500 bg-clip-text text-transparent">
-              Me
-            </span> */}
           </h2>
 
           <p className="mt-4 text-sm sm:text-base text-gray-400 leading-relaxed max-w-2xl mx-auto">
@@ -81,7 +38,7 @@ const About = () => {
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"><HiOutlineLightBulb size={25} /> Problem Solver</h3>
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"> <PiTargetBold size={25} /> Detail Oriented</h3>
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"><FaCode size={25} /> Clean Code</h3>
-            <h3 className="flex gap-2 font-bold text-xl text-gray-400"><FaBookOpen size={25} />Always Learning</h3> 
+            <h3 className="flex gap-2 font-bold text-xl text-gray-400"><FaBookOpen size={25} />Always Learning</h3>
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"><FaUsers size={25} /> Team Player</h3>
             <h3 className="flex gap-2 font-bold text-xl text-gray-400"><HiOutlineLightBulb size={25} />Curlous Mind</h3>
           </div>
