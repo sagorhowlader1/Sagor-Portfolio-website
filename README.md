@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# React + JavaScript + Vite
 
-A modern web application built with **React, TypeScript, and Vite**. This project provides a fast development environment, reusable components, and a clean foundation for building responsive web applications.
+A modern web application built with **React, JavaScript, and Vite**. This project provides a fast development environment, reusable components, and a clean foundation for building responsive web applications.
 
 ## 🚀 Features
 
@@ -15,7 +15,7 @@ A modern web application built with **React, TypeScript, and Vite**. This projec
 ## 🛠️ Tech Stack
 
 - **Frontend:** React
-- **Language:** TypeScript
+- **Language:** JavaScript
 - **Build Tool:** Vite
 - **Linting:** Oxlint
 - **Package Manager:** npm
@@ -30,42 +30,6 @@ Make sure you have installed:
 - npm (included with Node.js)
 - [Git](https://git-scm.com/)
 
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone YOUR_REPOSITORY_URL
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd YOUR_PROJECT_NAME
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open the local URL shown in your terminal.
-
-## 📜 Available Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Start the development server |
-| `npm run build` | Build the production application |
-| `npm run preview` | Preview the production build |
-| `npm run lint` | Run lint checks, if configured |
 
 ## 📁 Project Structure
 
@@ -112,7 +76,7 @@ Choose a deployment platform that supports your application's routing and config
 **Sagor Howlader**
 
 - GitHub: [@sagorhowlader1](https://github.com/sagorhowlader1)
-- LinkedIn: [Add your LinkedIn profile URL](https://www.linkedin.com/in/saogrhowlader1/)
+- LinkedIn: [in/sagorhowlader1/](https://www.linkedin.com/in/saogrhowlader1/)
 
 ## 📄 License
 
