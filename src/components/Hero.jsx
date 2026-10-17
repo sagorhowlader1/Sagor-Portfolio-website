@@ -88,8 +88,8 @@ const Hero = () => {
 
               {/* Secondary - Download CV */}
               <a
-                href="/Fuad_Al_Maimun_CV.pdf"
-                download="Fuad_Al_Maimun_CV.pdf"
+                href="/Sagor_Howlader_CV.pdf"
+                download="Sagor_Howlader_CV.pdf"
                 className="group flex items-center justify-center gap-2.5 rounded-full border border-purple-500/30 bg-purple-950/30 px-6 py-3.5 font-medium text-purple-200 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-purple-400/60 hover:bg-purple-600/20 hover:text-white"
               >
                 <span>Download CV</span>

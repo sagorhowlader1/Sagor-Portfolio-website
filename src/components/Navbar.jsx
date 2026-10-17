@@ -155,8 +155,8 @@ const Navbar = () => {
 
           {/* CV Download */}
           <a
-            href="/Fuad_Al_Maimun_CV.pdf"
-            download="Fuad_Al_Maimun_CV.pdf"
+            href="/Sagor_Howlader_CV.pdf"
+            download="Sagor_Howlader_CV.pdf"
             aria-label="Download CV"
             title="Download CV"
             className="rounded-full p-2 text-slate-500 transition-all duration-300 hover:bg-purple-500/10 hover:text-purple-300"
