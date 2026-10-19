@@ -2,7 +2,7 @@
 
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { FaCss3Alt, FaGitAlt, FaServer } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiZhipuAiFill } from "react-icons/ri";
 
 import {
   SiHtml5,
@@ -90,6 +90,7 @@ const categories = [
       { name: "Claude", icon: SiClaude, color: "#D97757" },
       { name: "Gemini", icon: SiGooglegemini, color: "#FFFFFF" },
       { name: "Opencode", icon: SiOpencode, color: "#F5A623" },
+      { name: "Z.AI", icon: RiZhipuAiFill, color: "#FFFFFF" },
 
     ],
   },

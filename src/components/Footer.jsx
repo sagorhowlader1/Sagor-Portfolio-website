@@ -1,7 +1,6 @@
-import React from "react";
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { Mail } from "lucide-react";
 import { SiLeetcode } from "react-icons/si";
+
 export const Contact = () => {
   return <footer id="contact" className="relative  scroll-mt-20 bg-[#0A0518] text-white px-6 md:px-10 lg:px-16 py-10 font-['Poppins'] overflow-hidden">
     {/* Background Glow */}
