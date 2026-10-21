@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
 
         <link rel="shortcut icon" href="/images/favico.png" type="image/x-icon" />
       </head>
-      <body>
+      <body className="min-h-screen w-full min-w-0">
         {children}
       </body>
     </html>

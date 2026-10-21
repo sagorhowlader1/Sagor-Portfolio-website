@@ -10,9 +10,9 @@ import Footer from '../src/components/Footer';
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-[#21130b]">
+    <div className="min-h-screen w-full min-w-0 overflow-x-clip bg-[#21130b] text-white">
       <Navbar />
-      <main>
+      <main className="w-full min-w-0">
         <Hero />
         <About />
         <Skills />
