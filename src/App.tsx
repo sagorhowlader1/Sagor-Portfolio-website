@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Footer from "./components/Footer";
 import "../styles/globals.css";
 
+
 export default function Home() {
   return (
     <div className="min-h-screen">
