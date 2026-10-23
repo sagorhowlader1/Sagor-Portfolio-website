@@ -52,7 +52,7 @@ const Education = () => {
           EDUCATION QUALIFICATION
         </h2>
 
-        {/* <div className="mx-auto mt-2 h-[2px] w-12 bg-[#a3ff00]" /> */}
+        <div className="mx-auto mt-2 h-[2px] w-12 bg-[#a3ff00]" />
       </div>
 
       {/* Timeline */}
@@ -64,33 +64,30 @@ const Education = () => {
           {education.map((item, index) => (
             <div
               key={item.year}
-              className={`relative flex ${
-                item.side === "left"
+              className={`relative flex ${item.side === "left"
                   ? "justify-start"
                   : "justify-end"
-              }`}
+                }`}
             >
               {/* Timeline dot */}
               <span className="absolute left-1/2 top-[66px] z-10 h-3 w-3 -translate-x-1/2 rounded-full border-[3px] border-[#a3ff00] bg-[#030407] shadow-[0_0_10px_#a3ff00]" />
 
               {/* Card */}
               <div
-                className={`w-[calc(50%-60px)] rounded-xl border border-[#1b1e24] bg-[#050609] p-5 ${
-                  item.side === "left"
+                className={`w-[calc(50%-60px)] rounded-xl border border-[#1b1e24] bg-[#050609] p-5 ${item.side === "left"
                     ? "mr-[60px]"
                     : "ml-[60px]"
-                }`}
+                  }`}
               >
                 <div className="flex items-start gap-3">
                   {/* Icon */}
                   <div
-                    className={`flex h-[35px] w-[35px] shrink-0 items-center justify-center rounded-lg text-lg text-white ${
-                      index === 0
+                    className={`flex h-[35px] w-[35px] shrink-0 items-center justify-center rounded-lg text-lg text-white ${index === 0
                         ? "bg-gradient-to-br from-lime-500 to-blue-500"
                         : index === 1
-                        ? "bg-gradient-to-br from-green-500 to-indigo-500"
-                        : "bg-gradient-to-br from-amber-400 to-purple-500"
-                    }`}
+                          ? "bg-gradient-to-br from-green-500 to-indigo-500"
+                          : "bg-gradient-to-br from-amber-400 to-purple-500"
+                      }`}
                   >
                     {item.icon}
                   </div>
