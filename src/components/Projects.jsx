@@ -2,6 +2,7 @@
 
 
 
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -63,13 +64,15 @@ const Projects = () => {
               className="group overflow-hidden rounded-xl border border-zinc-800 bg-[#08090c] transition duration-300 hover:-translate-y-1 hover:border-[#a3ff00]/50"
             >
               {/* Project image */}
-              <div className="overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={`${project.title} screenshot`}
-                  className="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
-                />
-              </div>
+              <Link href={project.live} >
+                <div className="overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} screenshot`}
+                    className="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </Link>
 
               {/* Project details */}
               <div className="p-5">
