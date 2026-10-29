@@ -3,6 +3,7 @@
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { FaCss3Alt, FaGitAlt, FaServer } from "react-icons/fa";
 import { RiNextjsFill, RiZhipuAiFill } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 
 import {
   SiHtml5,
@@ -24,6 +25,7 @@ import {
   SiGooglegemini,
   SiOpencode,
   SiBetterauth,
+  SiNpm,
 } from "react-icons/si";
 
 const categories = [
@@ -66,15 +68,31 @@ const categories = [
       { name: "Daisy UI", icon: SiDaisyui, color: "#FBBD23" },
     ],
   },
+
+
+
+
   {
-    title: "DevOps & Tools",
-    skills: [
-      { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
-      { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
-      { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
-      { name: "Git", icon: FaGitAlt, color: "#F05032" },
-    ],
-  },
+  title: "DevOps & Tools",
+  skills: [
+    { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
+    { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+    { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
+    { name: "Git", icon: FaGitAlt, color: "#F05032" },
+    { name: "VS Code", icon: VscVscode, color: "#007ACC" },
+    { name: "npm", icon: SiNpm, color: "#E53935" },
+  ],
+},
+
+  // {
+  //   title: "DevOps & Tools",
+  //   skills: [
+  //     { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
+  //     { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+  //     { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
+  //     { name: "Git", icon: FaGitAlt, color: "#F05032" },
+  //   ],
+  // },
   {
     title: "Libraries & Integrations",
     skills: [
