@@ -68,31 +68,17 @@ const categories = [
       { name: "Daisy UI", icon: SiDaisyui, color: "#FBBD23" },
     ],
   },
-
-
-
-
   {
   title: "DevOps & Tools",
-  skills: [
-    { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
-    { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
-    { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
-    { name: "Git", icon: FaGitAlt, color: "#F05032" },
-    { name: "VS Code", icon: VscVscode, color: "#007ACC" },
-    { name: "npm", icon: SiNpm, color: "#E53935" },
-  ],
-},
-
-  // {
-  //   title: "DevOps & Tools",
-  //   skills: [
-  //     { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
-  //     { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
-  //     { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
-  //     { name: "Git", icon: FaGitAlt, color: "#F05032" },
-  //   ],
-  // },
+    skills: [
+      { name: "Vercel", icon: SiVercel, color: "#FFFFFF" },
+      { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+      { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
+      { name: "Git", icon: FaGitAlt, color: "#F05032" },
+      { name: "VS Code", icon: VscVscode, color: "#007ACC" },
+      { name: "npm", icon: SiNpm, color: "#E53935" },
+    ],
+  },
   {
     title: "Libraries & Integrations",
     skills: [
